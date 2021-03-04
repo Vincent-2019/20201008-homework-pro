@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    int n, i, j, m, y, z,a,b;
+    int n, i, j, m, y, z,a,b,c,d;
     cin >> n;
     cin >> m;
     i = 1;
@@ -13,17 +13,19 @@ int main(){
             y += i;
         }
         i = i+1;
+        d =i-1;
     }
     while( j <= m ){
         if( m%j == 0 ){
             z += j;
         }
         j = j+1;
+        c =j-1;
     }
-    if(a == m&&b==n){
+    if(c == m&&d==n){
         cout << "親和數";    
     }
-    else if(a == m&&b==n){
+    else if(c == m&&d==n){
         cout << "親和數";
     }
     else{
